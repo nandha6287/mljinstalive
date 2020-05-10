@@ -39,7 +39,7 @@ public class Operations {
         log.info("getGuestName:"+webex.getGuestName());
         log.info("getWebexHost:"+webex.getWebexHost());
         String guestUrl = instaLiveBasePath+randomUUIDString;
-        WebExDataModel webexDb = new WebExDataModel(webex.getGuestName(), webex.getAgentName(), webex.getAgentCode(), webex.getWebexHost(),guestUrl, randomUUIDString);
+        WebExDataModel webexDb = new WebExDataModel(webex.getGuestName(), webex.getAgentName(), webex.getAgentCode(), webex.getWebexHost(), webex.getWebexJWT(), guestUrl, randomUUIDString);
         log.info("guestUrl:"+guestUrl);
 		return webexDb;
 	}

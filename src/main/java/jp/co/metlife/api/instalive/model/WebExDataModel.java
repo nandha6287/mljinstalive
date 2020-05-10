@@ -28,6 +28,9 @@ public class WebExDataModel {
 	@Column(name="WEBEX_HOST")
     private String webexHost;
 	
+	@Column(name="WEBEX_JWT")
+    private String webexJWT;
+
 	@Column(name="GUEST_URL")
     private String guestUrl;
 	
@@ -39,11 +42,12 @@ public class WebExDataModel {
     public WebExDataModel() {  }
  
     // Parameterized constructor.
-    public WebExDataModel(String guestName, String agentName,String agentCode,String webexHost, String guestUrl, String meetingUUID) {
+    public WebExDataModel(String guestName, String agentName,String agentCode,String webexHost, String webexJWT, String guestUrl, String meetingUUID) {
     	this.guestName = guestName;
         this.agentName = agentName;
         this.agentCode = agentCode;
         this.webexHost = webexHost;
+        this.webexJWT = webexJWT;
         this.guestUrl = guestUrl;
         this.meetingUUID = meetingUUID;
     }
@@ -87,6 +91,14 @@ public class WebExDataModel {
 
 	public void setMeetingUUID(String meetingUUID) {
 		this.meetingUUID = meetingUUID;
+	}
+	
+	public String getWebexJWT() {
+		return webexJWT;
+	}
+
+	public void setWebexJWT(String webexJWT) {
+		this.webexJWT = webexJWT;
 	}
 
 }

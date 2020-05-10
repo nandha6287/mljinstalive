@@ -6,6 +6,7 @@ public class WebExRestModel {
     private String agentName;
     private String agentCode;
     private String webexHost;
+    private String webexJWT;
 	public String getGuestName() {
 		return guestName;
 	}
@@ -29,5 +30,11 @@ public class WebExRestModel {
 	}
 	public void setWebexHost(String webexHost) {
 		this.webexHost = webexHost;
+	}
+	public String getWebexJWT() {
+		return webexJWT;
+	}
+	public void setWebexJWT(String webexJWT) {
+		this.webexJWT = webexJWT;
 	}
 }

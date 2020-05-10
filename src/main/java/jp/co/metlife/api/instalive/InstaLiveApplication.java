@@ -24,7 +24,7 @@ public class InstaLiveApplication {
 	  public CommandLineRunner demo(WebExRepo repository) {
 	    return (args) -> {
 	      // save a WebExDataModel
-	      repository.save(new WebExDataModel("yamada", "tanaka","2134","webex.com","fsdf/sdf","45dsf"));
+	      repository.save(new WebExDataModel("yamada", "tanaka","2134","webex.com","wyerer.werew.werwer", "fsdf/sdf","45dsf"));
 
 	      // fetch all customers
 	      log.info("WebExDataModel found with findAll():");

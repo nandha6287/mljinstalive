@@ -54,6 +54,7 @@ public class InstaLiveController {
 				response.put("agentName", webex.getAgentName());
 				response.put("agentCode", webex.getAgentCode());
 				response.put("webexHost", webex.getWebexHost());
+				response.put("webexJWT", webex.getWebexJWT());
 				response.put("result", "success");
 			}
 			//log.info("guestName:"+webex.getGuestName());
